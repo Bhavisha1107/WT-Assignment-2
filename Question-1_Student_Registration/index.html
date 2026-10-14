@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-badge">&#127891;</div>
+            <h1>Student Registration</h1>
+            <p class="subtitle">Fill in your academic and personal details to register</p>
+        </div>
+
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="e.g. Bhavisha S">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="roll">Roll Number</label>
+                <input type="text" id="roll" placeholder="e.g. 24CS031">
+                <span class="error" id="rollError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="e.g. bhavisha@gmail.com">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course</label>
+                <select id="course">
+                    <option value="">-- Select Course --</option>
+                    <option value="CSE">Computer Science Engineering</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="ECE">Electronics and Communication</option>
+                    <option value="EEE">Electrical and Electronics</option>
+                    <option value="MECH">Mechanical Engineering</option>
+                    <option value="AIDS">Artificial Intelligence & Data Science</option>
+                </select>
+                <span class="error" id="courseError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Min. 8 chars (Uppercase, Lowercase, Number & Symbol)">
+                <span class="error" id="passwordError"></span>
+                <small class="hint">Must contain at least 8 characters with uppercase, lowercase, digit & symbol.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Upload Student Document</label>
+                <div class="file-drop-zone">
+                    <input type="file" id="file" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+                <span class="error" id="fileError"></span>
+                <small class="hint">Accepted formats: PDF, JPG, PNG (Max size: 2 MB)</small>
+            </div>
+
+            <button type="submit" id="submitBtn">Register Now</button>
+
+            <div id="successMessage" class="success-box"></div>
+        </form>
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+</html>

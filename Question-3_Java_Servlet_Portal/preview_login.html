@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #93c5fd 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .login-card {
+            background: #ffffff;
+            padding: 40px 36px;
+            width: 100%;
+            max-width: 390px;
+            border-radius: 16px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+        .portal-icon {
+            font-size: 44px;
+            color: #1d4ed8;
+            margin-bottom: 12px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            font-size: 13.5px;
+            color: #64748b;
+            margin-bottom: 24px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        .input-group span {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748b;
+            font-size: 15px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px 14px 12px 42px;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+            background: #f8fafc;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1d4ed8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+        }
+        .demo-box {
+            margin-top: 24px;
+            padding-top: 18px;
+            border-top: 1px dashed #e2e8f0;
+            font-size: 12.5px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="portal-icon">&#127891;</div>
+        <h2>Student Profile Portal</h2>
+        <p class="subtitle">Login to view student profiles and documents</p>
+
+        <form action="#" method="post">
+            <div class="input-group">
+                <span>&#128100;</span>
+                <input type="text" name="username" value="admin" required>
+            </div>
+
+            <div class="input-group">
+                <span>&#128274;</span>
+                <input type="password" name="password" value="••••••••" required>
+            </div>
+
+            <button type="button">Login</button>
+        </form>
+
+        <div class="demo-box">
+            <p><strong>Demo Credentials:</strong></p>
+            <p>Username: <code>admin</code></p>
+            <p>Password: <code>admin123</code></p>
+        </div>
+    </div>
+</body>
+</html>
